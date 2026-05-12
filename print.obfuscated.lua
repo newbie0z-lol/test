@@ -21,7 +21,7 @@ local Holder = Instance.new("Frame")
 Holder.Parent = ScreenGui
 Holder.AnchorPoint = Vector2.new(0.5,0)
 Holder.Position = UDim2.new(0.5,0,0.035,0)
-Holder.Size = UDim2.new(0,950,0,58)
+Holder.Size = UDim2.new(0.92,0,0,52)
 Holder.BackgroundTransparency = 1
 
 -- GLOW BORDER FRAME
@@ -87,7 +87,7 @@ Layout.Parent = Main
 Layout.FillDirection = Enum.FillDirection.Horizontal
 Layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 Layout.VerticalAlignment = Enum.VerticalAlignment.Center
-Layout.Padding = UDim.new(0,14)
+Layout.Padding = UDim.new(0,8)
 
 -- BUTTONS
 local Buttons = {}
@@ -108,12 +108,12 @@ for _,Name in ipairs(ButtonNames) do
 	
 	local Button = Instance.new("TextButton")
 	Button.Parent = Main
-	Button.Size = UDim2.new(0,118,0,28)
+	Button.Size = UDim2.new(1/#ButtonNames,-10,0,24)
 	Button.BackgroundColor3 = Color3.fromRGB(235,235,235)
 	Button.Text = Name
 	Button.TextColor3 = Color3.new(0,0,0)
 	Button.Font = Enum.Font.GothamBold
-	Button.TextSize = 13
+	Button.TextSize = 11
 	Button.BorderSizePixel = 0
 	Button.AutoButtonColor = false
 	
@@ -145,7 +145,7 @@ for _,Name in ipairs(ButtonNames) do
 			Button,
 			TweenInfo.new(0.08),
 			{
-				Size = UDim2.new(0,112,0,24)
+				Size = UDim2.new(1/#ButtonNames,-14,0,22)
 			}
 		):Play()
 		
@@ -158,7 +158,7 @@ for _,Name in ipairs(ButtonNames) do
 			Button,
 			TweenInfo.new(0.08),
 			{
-				Size = UDim2.new(0,118,0,28)
+				Size = UDim2.new(1/#ButtonNames,-10,0,24)
 			}
 		):Play()
 		
